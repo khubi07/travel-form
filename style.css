@@ -1,0 +1,25 @@
+.img{
+    background-image:url(https://mipuntajedecreditoenusa.com/wp-content/uploads/2023/07/Cheap-Vacation-Spots-In-The-USA-1024x569.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    
+}
+
+
+
+.container {
+    position: relative;
+    z-index: 2;
+    padding: 34px;
+
+}
+.container h2 p {
+    text-align: center;
+}
+/* #bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+} */
