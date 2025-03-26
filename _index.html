@@ -15,27 +15,27 @@
         <p>Enter the details and submit the form to confirm your participation in trip</p>
     
         <!-- form creation -->
-        <form >
+        <form action="index.php" method="post">
             <div class="mb-3">
                 <label for="exampleInputName1" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleInpuName1" placeholder="enter your name">
+                <input type="text" class="form-control" id="exampleInpuName1" name="name" placeholder="enter your name" required>
               </div>
 
               <div class="col-12">
                 <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="1234 Main St" required>
               </div>
 
               <div class="mb-3">
                 <label for="exampleInputBranch1" class="form-label">Branch</label>
-                <input type="text" class="form-control" id="exampleInputBranch1" placeholder="enter your branch">
+                <input type="text" class="form-control" id="exampleInputBranch1" name="branch" placeholder="enter your branch" required>
               </div>
 
               
 
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="enter your email" required>
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
 
@@ -44,17 +44,13 @@
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="enter password">
             </div> -->
 
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" name="gender" aria-label="Default select example">
                 <option value="" selected disabled>gender</option>
-                <option value="1">male</option>
-                <option value="2">Female</option>
-                <option value="3">Prefer not to say</option>
+                <option value="male">male</option>
+                <option value="female">Female</option>
+                <option value="prefer not to say">Prefer not to say</option>
               </select>
 
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
@@ -68,4 +64,3 @@
   </body>
 </html>
 
-<!-- INSERT INTO `us-trip` (`sno`, `name`, `address`, `branch`, `email`, `gender`, `dt`) VALUES ('1', 'suman', 'kaurinbhata rjn', 'cse core', 'sumanme@gmail.com', 'female', current_timestamp()); -->
